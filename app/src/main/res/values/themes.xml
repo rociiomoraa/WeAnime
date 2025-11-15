@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.WeAnime" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <!-- Tema base de la app (Compose maneja los colores, no XML) -->
+    <style name="Theme.WeAnime" parent="@android:style/Theme.Light.NoTitleBar">
+        <!-- No hace falta nada más -->
+    </style>
+
+    <!-- Tema para la SplashScreen nativa -->
+    <style name="Theme.WeAnime.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/weanime_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo_weanime_splash</item>
+        <item name="windowSplashScreenAnimationDuration">800</item>
+        <item name="postSplashScreenTheme">@style/Theme.WeAnime</item>
+    </style>
+
 </resources>
