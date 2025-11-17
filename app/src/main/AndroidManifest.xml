@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
 
-        <!-- ABOUT (no es launcher) -->
+        <!-- ABOUT -->
         <activity
             android:name=".AboutActivity"
             android:exported="false" />
